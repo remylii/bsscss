@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" >
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./bbs.css">
+    <title>BBS</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="header-title">ここにタイトル</h1>
+</header>
+<div class="wrapper">
+    <main>
+        <h2 class="section-title section-title-light">投稿一覧</h2>
+        <section class="thread">
+            <div class="thread-panel">
+                <div class="thread-caption"><span class="thread-author">Dockerに魂を引かれた人</span><span class="thread-datetime">2019/10/30 14:30:00</span></div>
+                <div class="thread-body">
+                    コンテナの状態には、(created|restarting|removing|running|paused|exited) があるらしいが、docker container ls で表示される
+                </div>
+            </div>
+            <div class="thread-panel">
+                <div class="thread-caption"><span class="thread-author">React太郎</span><span class="thread-datetime">2019/10/30 14:30:00</span></div>
+                <div class="thread-body">
+                    これは関数またはオブジェクト.
+                    関数のとき...コンポーネントが作られたとき、一回呼ばれる.
+                    `dispatch` を引数として受け取り、その`dispatch`を使って、dispatchアクションが詰まったオブジェクトを返す
+                    オブジェクトのとき...このオブジェクトはActionCreator. 各actioncreatorは、そのアクションをdispatchするprop関数になる
+                    通常、 `connect`はこのように使う
+                </div>
+            </div>
+            <div class="thread-panel">
+                <div class="thread-caption"><span class="thread-author">色相環おじさん</span><span class="thread-datetime">2019/10/30 14:30:00</span></div>
+                <div class="thread-body">
+                    色相環は虚構のシステムである。（あと色立体も）なので参考にするのは良いけど、色相環にとらわれてばかりいると、思考の幅が狭くなる。色というのはまわりを見渡すだけでも一杯ある。色相環にある色ばかりが色ではない
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="post">
+        <h2 class="section-title section-title-light">投稿する</h2>
+        <div class="section-description">パスワードは編集時に必要になります</div>
+        <div class="post-panel">
+            <div class="post-field">
+                <p class="post-field-label">名前*</p>
+                <input type="text" class="post-field-form">
+            </div>
+            <div class="post-field">
+                <p class="post-field-label">パスワード</p>
+                <input type="password" class="post-field-form">
+            </div>
+            <div class="post-field">
+                <p class="post-field-label">本文</p>
+                <textarea rows="5" class="post-field-form-textarea"></textarea>
+            </div>
+            <div class="post-submit">
+                <button class="post-btn">投稿</button>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <a href="#" target="_blank">リンクとか</a>
+</footer>
+</body>
+</html>
